@@ -83,7 +83,7 @@ The codes are based on the **"Java Programming Masterclass for Software Develope
 
 ## ✍️ Author
 
-- **Name**: Sourav Kumar
+- **Name**: Farhan Danish
 - **GitHub Profile**: [@farhan-danish17](https://github.com/farhan-danish17)
 
 ---
