@@ -1,7 +1,7 @@
 /*
 1. Write a method called toMilesPerHour that has 1 parameter of type double with the name kilometersPerHour. This method needs to return the rounded value of the calculation of type long.
 If the parameter kilometersPerHour is less than 0, the method toMilesPerHour needs to return -1 to indicate an invalid value.
-Otherwise, if it is positive, calculate the value of miles per hour, round it and return it. For conversion and rounding, check the notes in the text below.
+Otherwise, if it is positive, calculate the value of miles per hour, round it and return it.
 */
 
 /*
@@ -16,26 +16,22 @@ If the parameter kilometersPerHour is < 0 then print the text "Invalid Value"
 package Section_5;
 
 public class P09_Challenge02 {
-    public static long toMilesPerHour(double kilometersPerHour) {
-          if (kilometersPerHour > 0) {
-               double answer = kilometersPerHour * 0.621371;
-               return Math.round(answer);
-          } else {
+    public class SpeedConverter {
+    // write code here
+     public static long toMilesPerHour(double kilometersPerHour) {
+          if (kilometersPerHour < 0) {
                return -1;
-          }
+          } 
+          return Math.round(kilometersPerHour / 1.609);
      }
 
      public static void printConversion(double kilometersPerHour) {
           if (kilometersPerHour < 0) {
                System.out.println("Invalid Value");
-          } else {
-               System.out.println(kilometersPerHour + " km/h = " + (kilometersPerHour * 0.621371) + " mi/h");
-          }
-     }
-     public static void main(String[] args) {
-          
-          System.out.println(toMilesPerHour(10.25));
-          printConversion(10.25);
-
-     }
+               return;
+        }
+        long milesPerHour = toMilesPerHour(kilometersPerHour);
+        System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+    }
+}
 }

@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class P08_Challenge1 {
      public static void checkNumber(int number) {
           if (number > 0) {
-               System.out.println("Positive");
+               System.out.println("positive");
           } else if(number < 0) {
                System.out.println("negative");
           } else {
