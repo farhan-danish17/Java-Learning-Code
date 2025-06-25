@@ -11,7 +11,7 @@ public class P14_Challenge07 {
           if ((num1 + num2) == num3) {
                return true;
           } else {
-               return fals;
+               return false;
           }
      }
      public static void main(String[] args) {
