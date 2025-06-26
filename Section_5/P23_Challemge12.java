@@ -12,7 +12,7 @@ Write a method isCatPlaying that has 2 parameters. Method needs to return true i
 
 package Section_5;
 
-public class P22_Challemge12 {
+public class P23_Challemge12 {
     public class PlayingCat {
     // write code here
     public static boolean isCatPlaying (boolean summer, int temperature){

@@ -13,7 +13,7 @@ Otherwise, print "Neither all are equal or different".
 
 package Section_5;
 
-public class P21_Challenge11 {
+public class P22_Challenge11 {
     public class IntEqualityPrinter {
     // write code here
     public static void printEqual (int num1, int num2, int num3) {
