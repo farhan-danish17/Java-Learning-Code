@@ -1,8 +1,6 @@
 package Section_6;
 
-import java.util.Scanner;
-
-public class P26_ReadingUserInput {
+public class P27_Scanner {
     public static void main(String[] args) {
         int currentYear = 2025;
         System.out.println(getInputFromConsole(currentYear));
@@ -17,7 +15,4 @@ public class P26_ReadingUserInput {
         return "So you are " + age + " years old.";   
     }
     
-    public static String getInputFromScanner(int currentYear) {
-        return "";
-    }
 }
