@@ -12,7 +12,7 @@ It should return true if the number is a palindrome number otherwise it should r
 
 package Section_6;
 
-public class P14_Challenge16 {
+public class P14_Challenge15 {
     public class NumberPalindrome {
     // write code here
     public static boolean isPalindrome (int number) {

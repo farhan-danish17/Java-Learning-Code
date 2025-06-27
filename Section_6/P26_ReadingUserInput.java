@@ -1,7 +1,5 @@
 package Section_6;
 
-import java.util.Scanner;
-
 public class P26_ReadingUserInput {
     public static void main(String[] args) {
         int currentYear = 2025;
