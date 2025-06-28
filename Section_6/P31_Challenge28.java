@@ -35,9 +35,9 @@ public class P31_Challenge28 {
             }
         }
 
-          long average = (count == 0) ? 0 : Math.round((double) sum / count);
-          System.out.println("SUM = " + sum + " AVG = " + average);
-          scanner.close();
+        long average = (count == 0) ? 0 : Math.round((double) sum / count);
+        System.out.println("SUM = " + sum + " AVG = " + average);
+        scanner.close();
     }
 }
 }
