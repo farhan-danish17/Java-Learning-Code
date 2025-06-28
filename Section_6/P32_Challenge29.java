@@ -42,5 +42,55 @@ If all parameters are valid, the method needs to calculate the number of buckets
 package Section_6;
 
 public class P32_Challenge29 {
+    public class PaintJob {
+    // write code here
+    public static int getBucketCount (double width, double height,double areaPerBucket,int extraBuckets) {
+        
+        double areaOfWall = width * height;
+        
+        if (
+            width <= 0 ||
+            height <= 0 ||
+            areaPerBucket <= 0 ||
+            extraBuckets < 0
+            ) {
+                return -1;
+        } else {
+            double totalBucketRequired = Math.ceil(areaOfWall / areaPerBucket);
+            int totalPaintRequired = (int)totalBucketRequired;
+            int bucketsToBuy = totalPaintRequired - extraBuckets;
+            return bucketsToBuy;
+        }
+    }
     
+    public static int getBucketCount (double width, double height, double areaPerBucket) {
+        
+        double areaOfWall = width * height;
+        
+        if (
+            width <= 0 ||
+            height <= 0 ||
+            areaPerBucket <= 0
+            ) {
+                return -1;
+        } else {
+            double totalBucketRequired = Math.ceil(areaOfWall / areaPerBucket);
+            int totalPaintRequired = (int)totalBucketRequired;
+            return totalPaintRequired;
+        }
+    }
+    
+    public static int getBucketCount (double area, double areaPerBucket) {
+        if (
+            area <= 0 ||
+            areaPerBucket <= 0
+            ) {
+               return -1; 
+        } else {
+            double totalBucketRequired = Math.ceil(area / areaPerBucket);
+            int totalPaintRequired = (int)totalBucketRequired;
+            return totalPaintRequired;
+        }
+    }
+}
 }
