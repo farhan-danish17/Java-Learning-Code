@@ -2,12 +2,12 @@ package Section_7_ClassesAndInheritance.Inheritance;
 
 public class Animal {
 
-    private String type;
+    protected String type;
     private String size;
     private double weight;
 
     public Animal() {
-        
+
     }
 
     public Animal(String type, String size, double weight) {
