@@ -30,7 +30,6 @@ public class Dog extends Animal{
 
     @Override
     public void move(String speed) {
-        // TODO Auto-generated method stub
         super.move(speed);
         System.out.println("Dogs walk ,run and wag their tail");
     }
